@@ -1,0 +1,164 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fc;
+  color: #1a1919;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  padding: 0.6rem 1rem;
+  width: 300px;
+  border: 2px solid #969494;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #0e8ce0;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border: 0.5px solid rgb(105, 105, 105);
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  word-wrap: break-word;
+  color: black;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 28%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 35%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+  width: 22%;
+}
+th:nth-child(4),
+td:nth-child(4) {
+  width: 15%;
+}
+
+th {
+  background-color: #3d85d8;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+th:hover {
+  background-color: #74a9e2;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3efef;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+  background-color: #b6e2f7;
+  transform: scale(1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:disabled {
+  background-color: #b2bec3;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.entry-count {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.noData {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: larger;
+}
+
+.status-button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.status-active {
+  background-color: rgb(55, 201, 55);
+}
+
+.status-inactive {
+  background-color: rgb(250, 116, 7);
+}
