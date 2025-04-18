@@ -1,55 +1,59 @@
-# React + TypeScript + Vite
+# 🧾 userDataTable
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and feature-rich **data table application** built using **React + TypeScript + Vite**.  
+This app allows users to explore dynamic user data with **sorting, searching, filtering, and pagination** using data fetched from [`dummyjson.com`](https://dummyjson.com/users).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Visit Deployed App on Vercel](https://user-data-table-nk.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🔍 **Search** users by name, email, or other fields
+- 🗂️ **Sort** by column headers (ascending/descending)
+- 🎯 **Filter** users based on gender or other criteria
+- 📄 **Pagination** for browsing large datasets
+- ⚡ Super fast thanks to **Vite**
+- 🛠️ Built using **React + TypeScript**
+- 📱 Fully **responsive design**
+- 🎨 Clean and modern UI **CSS**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# userDataTable
+### 🧑‍💻 Tech Stack
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+- [DummyJSON API](https://dummyjson.com/users)
+
+---
+
+### 🛠️ Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/nitissk/userDataTable.git
+cd userDataTable
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
+
+🙌 Author
+Nitish Kumar
+
+📃 License
+This project is licensed under the MIT License – see LICENSE file for details.
+
+
+
